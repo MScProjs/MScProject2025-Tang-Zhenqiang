@@ -1,0 +1,71 @@
+Column Name,Is it original data?,Explanation and calculation methods
+id_student,yes,Student unique identifier
+gender,yes,Gender (M/F)
+highest_education,yes,"Highest academic qualification (e.g. A Level, HE Qualification, etc.)"
+age_band,yes,"Age group (0-35, 35-55, 55<=)"
+num_of_prev_attempts,yes,The number of times the student has previously attempted the course
+studied_credits,yes,The student's credit score
+disability,yes,Do you have a disability? (Y/N)
+date_registration,yes,Student registration date
+module_presentation_length,yes,Total length of the course (days)
+mean_score,calculate,Average score of students: mean_score = score.mean()
+max_score,calculate,The maximum score of a student: max_score = score.max()
+min_score,calculate,The student's lowest score: min_score = score.min()
+n_submissions,calculate,Number of submissions: n_submissions = score.count()
+n_missed,calculate,Number of missed assignments: n_missed = len(score[score.isna()])
+total_clicks,calculate,Total clicks: total_clicks = sum(sum_click)
+active_days,calculate,Active days: active_days = len(date.unique())
+activity_types,calculate,Number of activity types: activity_types = len(activity_type.unique())
+registration_lead_ratio,calculate,Registration lead ratio: registration_lead_ratio = date_registration / module_presentation_length
+n_activity_types,calculate,Number of course activity types: n_activity_types = len(activity_type.unique())
+dataplus,yes,Whether the student has participated in the DataPlus resource
+dualpane,yes,Whether the student has participated in the dualpane resource
+externalquiz,yes,Whether students have participated in externalquiz resources
+folder,yes,Whether the student has participated in the folder resource
+forumng,yes,Whether students participated in forumng resources
+glossary,yes,Whether students have participated in the glossary resource
+homepage,yes,Whether the student has participated in the homepage resources
+htmlactivity,yes,Whether the student has participated in the htmlactivity resource
+oucollaborate,yes,Whether the student has participated in OUcollaborate resources
+oucontent,yes,Whether students have engaged with oucontent resources
+ouelluminate,yes,Whether the student has participated in ouelluminate resources
+ouwiki,yes,Whether the student participates in ouwiki resources
+page,yes,Whether the student has participated in the page resource
+questionnaire,yes,Whether the student participated in the questionnaire resource
+quiz,yes,Whether students have participated in the quiz resource
+repeatactivity,yes,Whether students participated in the repeatactivity resource
+resource,yes,Whether the student has participated in the resource resource
+sharedsubpage,yes,Whether the student has participated in the sharedsubpage resource
+subpage,yes,Whether the student has participated in the subpage resource
+url,yes,Whether the student has participated in the url resource
+dataplus_click_ratio,calculate,dataplus click ratio: dataplus_click_ratio = dataplus / total_clicks
+dualpane_click_ratio,calculate,Dualpane click ratio: dualpane_click_ratio = dualpane / total_clicks
+externalquiz_click_ratio,calculate,externalquiz click ratio: externalquiz_click_ratio = externalquiz / total_clicks
+folder_click_ratio,calculate,folder click ratio: folder_click_ratio = folder / total_clicks
+forumng_click_ratio,calculate,forumng click ratio: forumng_click_ratio = forumng / total_clicks
+glossary_click_ratio,calculate,glossary click ratio: glossary_click_ratio = glossary / total_clicks
+homepage_click_ratio,calculate,Homepage click ratio: homepage_click_ratio = homepage / total_clicks
+htmlactivity_click_ratio,calculate,htmlactivity click ratio: htmlactivity_click_ratio = htmlactivity / total_clicks
+oucollaborate_click_ratio,calculate,oucollaborate click ratio: oucollaborate_click_ratio = oucollaborate / total_clicks
+oucontent_click_ratio,calculate,oucontent click ratio: oucontent_click_ratio = oucontent / total_clicks
+ouelluminate_click_ratio,calculate,ouelluminate click ratio: ouelluminate_click_ratio = ouelluminate / total_clicks
+ouwiki_click_ratio,calculate,ouwiki click ratio: ouwiki_click_ratio = ouwiki / total_clicks
+page_click_ratio,calculate,Page click ratio: page_click_ratio = page / total_clicks
+questionnaire_click_ratio,calculate,Questionnaire click ratio: questionnaire_click_ratio = questionnaire / total_clicks
+quiz_click_ratio,calculate,Quiz click ratio: quiz_click_ratio = quiz / total_clicks
+repeatactivity_click_ratio,calculate,repeatactivity click ratio: repeatactivity_click_ratio = repeatactivity / total_clicks
+resource_click_ratio,calculate,Resource click ratio: resource_click_ratio = resource / total_clicks
+sharedsubpage_click_ratio,calculate,sharedsubpage click ratio: sharedsubpage_click_ratio = sharedsubpage / total_clicks
+subpage_click_ratio,calculate,Subpage click ratio: subpage_click_ratio = subpage / total_clicks
+url_click_ratio,calculate,URL click ratio: url_click_ratio = url / total_clicks
+first_click_lag,calculate,First click time since course started
+last_click_to_end,calculate,The last click time until the end of the course
+engagement_span,calculate,The duration of student participation
+has_previous_attempts,calculate,Whether the student has ever attempted the course (1 or 0)
+n_total_assessments,calculate,Total number of assessments for this course
+assessment_completion_ratio,calculate,Completion rate of student assessment tasks
+unregistered,calculate,Whether the course has been withdrawn (1 or 0)
+final_result_bin,calculate,Whether to drop out of school (1 or 0)
+imd_band_numeric,calculate,Convert imd_band to numeric value (median of the interval)
+year,calculate,Semester Year
+code_module,yes,Course Code
